@@ -74,7 +74,7 @@ function manipulandoNoticias(){
                             $("#imgLink2").attr("href", "news.html?id=2");
                             $("#imgLink3").attr("href", "news.html?id=4");
                         }
-                        else if(idNoticia == "4"){
+                        else if(idNoticia == "4") {
                             $("#1").hide();
                             $("#2").hide();
                             $("#3").hide();
