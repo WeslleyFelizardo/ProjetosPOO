@@ -31,7 +31,7 @@
 
 </head>
 
-<body onload="action()">
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -72,20 +72,20 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/green-bg.jpg')">
+     <header class="intro-header" style="background-image: url('img/green-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>Man must explore, and this is exploration at its greatest</h1>
-                        <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                    <div class="site-heading">
+                        <h1>ONG - G7</h1>
+                        <hr class="small">
+                        <span class="subheading">Todos juntos pelo meio ambiente.</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    
     <!-- Post Content -->
     <article>
         <div class="container">
@@ -208,19 +208,19 @@
 
                           <p><a class="btn btn-primary" href="index.html" role="button">Voltar</a></p>
                       </div>
-                    
+                    <p><h3>Outras Notícias:</h3></p>
                     <div class="container">
                         <div class="row">
                             <div class="col-6">    
-                                <img id="img1" alt="" class="img-rounded" width="250" height="120">
+                                <a id="imgLink1"><img id="img1" alt="" class="img-rounded" width="250" height="120"></a>
                                 <p><a id="link1"></a></p>
                             </div>
                             <div class="col-6">
-                                <img id="img2" alt="" class="img-rounded" width="250" height="120">
+                                <a id="imgLink2"><img id="img2" alt="" class="img-rounded" width="250" height="120"></a>
                                 <p><a id="link2"></a></p>
                             </div>
                              <div class="col-6">
-                                <img id="img3" alt="" class="img-rounded" width="250" height="120">
+                                 <a id="imgLink3"><img id="img3" alt="" class="img-rounded" width="250" height="120"></a>
                                 <p><a id="link3"></a></p>
                             </div>
                         </div>
@@ -269,85 +269,8 @@
         </div>
     </footer>
     
-    <script type="text/javascript">
-		function action(){
-                    
-                        var url = window.location.href;
-                        var idNoticia = url.charAt(48);
-                        
-                        var tituloNoticia1 = "Ministro discute áreas protegidas no Amazonas";
-                        var tituloNoticia2 = "Febre amarela põe em risco algumas espécies de macacos";
-                        var tituloNoticia3 = "Acordo prevê ações sustentáveis no TSE";
-                        var tituloNoticia4 = "Estudo mostrará situação das florestas em PE";
-                        
-                        var caminhoImgNoticia1 = "img/imgNoticia1.png";
-                        var caminhoImgNoticia2 = "img/imgNoticia2.jpeg";
-                        var caminhoImgNoticia3 = "img/imgNoticia3.jpg";
-                        var caminhoImgNoticia4 = "img/imgNoticia4.jpg";
-                        
-                        if(idNoticia == "1"){
-                            $("#2").hide();
-                            $("#3").hide();
-                            $("#4").hide();
-                            $("#link1").text(tituloNoticia2);
-                            $("#link2").text(tituloNoticia3);
-                            $("#link3").text(tituloNoticia4);
-                            $("#img1").attr("src", caminhoImgNoticia2);
-                            $("#img2").attr("src", caminhoImgNoticia3);
-                            $("#img3").attr("src", caminhoImgNoticia4);
-                            $("#link1").attr("href", "news.html?id=2");
-                            $("#link2").attr("href", "news.html?id=3");
-                            $("#link3").attr("href", "news.html?id=4");
-                        }
-                        else if(idNoticia == "2"){
-                            $("#1").hide();
-                            $("#3").hide();
-                            $("#4").hide();
-                            $("#link1").text(tituloNoticia1);
-                            $("#link2").text(tituloNoticia3);
-                            $("#link3").text(tituloNoticia4);
-                            $("#img1").attr("src", caminhoImgNoticia1);
-                            $("#img2").attr("src", caminhoImgNoticia3);
-                            $("#img3").attr("src", caminhoImgNoticia4);
-                            $("#link1").attr("href", "news.html?id=1");
-                            $("#link2").attr("href", "news.html?id=3");
-                            $("#link3").attr("href", "news.html?id=4");
-                        }
-                        else if(idNoticia == "3"){
-                            $("#1").hide();
-                            $("#2").hide();
-                            $("#4").hide();
-                            $("#link1").text(tituloNoticia1);
-                            $("#link2").text(tituloNoticia2);
-                            $("#link3").text(tituloNoticia4);
-                            $("#img1").attr("src", caminhoImgNoticia1);
-                            $("#img2").attr("src", caminhoImgNoticia2);
-                            $("#img3").attr("src", caminhoImgNoticia4);
-                            $("#link1").attr("href", "news.html?id=1");
-                            $("#link2").attr("href", "news.html?id=2");
-                            $("#link3").attr("href", "news.html?id=4");
-                        }
-                        else if(idNoticia == "4"){
-                            $("#1").hide();
-                            $("#2").hide();
-                            $("#3").hide();
-                            $("#link1").text(tituloNoticia1);
-                            $("#link2").text(tituloNoticia2);
-                            $("#link3").text(tituloNoticia3);
-                             $("#img1").attr("src", caminhoImgNoticia1);
-                            $("#img2").attr("src", caminhoImgNoticia2);
-                            $("#img3").attr("src", caminhoImgNoticia3);
-                            $("#link1").attr("href", "news.html?id=1");
-                            $("#link2").attr("href", "news.html?id=2");
-                            $("#link3").attr("href", "news.html?id=3");
-                        }
-                         
-                          //alert('nmn,n');
-                         
-		}
-          
-    </script>
-    
+    <script src="js/navagacaoNoticias.js" type="text/javascript"></script>
+ 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
