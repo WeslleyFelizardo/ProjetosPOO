@@ -1,0 +1,36 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+    <section id="footer-sec" >
+             
+            <div class="container">
+           <div class="row  pad-bottom" > 
+            <div class="col-md-4">
+                
+            <h4> <strong>Atalhos</strong> </h4>
+            <a href= "amortizacao-americano.jsp">Amortização americano</a><br/>
+            <a href= "amortizacao-constante.jsp">Amortização constante</a><br/>
+            <a href= "tabela-price.jsp">Tabela price</a><br/>
+               
+                 
+                </div>
+               <div class="col-md-4">
+                    <h4> <strong>Links sociais</strong> </h4>
+                   <p>
+                     <a href="#"><i class="fa fa-facebook-square fa-3x"  ></i></a>  
+                        <a href="#"><i class="fa fa-twitter-square fa-3x"  ></i></a>  
+                        <a href="#"><i class="fa fa-linkedin-square fa-3x"  ></i></a>  
+                       <a href="#"><i class="fa fa-google-plus-square fa-3x"  ></i></a>  
+                   </p>
+                </div>
+               <div class="col-md-4">
+                   <h4> <strong>Localização</strong> </h4>
+                            <p>
+                               Praça 19 de Janeiro, <br />
+                               Praia Grande - SP  <br />
+                               CEP - 10909094
+                            </p>
+                    <a href="#" class="btn btn-primary" >Contato</a>
+                </div>
+               </div>
+            </div>
+    </section>
