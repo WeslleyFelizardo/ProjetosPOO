@@ -1,0 +1,37 @@
+<%@ page pageEncoding="UTF-8" %>
+<footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Projeto Controle Cadastral</h5>
+          <p class="grey-text text-lighten-4">Cadastro de CLIENTES e FORNECEDORES que permite listagem, inclusão, alteração e remoção de dados cadastrais.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Colaboradores</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Anderson Orsogna</a></li>
+            <li><a class="white-text" href="#!">Otávio Guimarães</a></li>
+            <li><a class="white-text" href="#!">Roberta Reis</a></li>
+            <li><a class="white-text" href="#!">Weslley Felizardo</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contatos</h5>
+          <ul>
+            <li><a class="white-text" href="#!">andersonorso@gmail.com</a></li>
+            <li><a class="white-text" href="#!">otaviogui@@gmail.com</a></li>
+            <li><a class="white-text" href="#!">robertareis@gmail.com</a></li>
+            <li><a class="white-text" href="#!">wesllwyfeliz@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align" >
+          <p>Desenvolvido por Grupo 4 - POO - ADS Noturno</p>
+          &copy; 2017 - Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
