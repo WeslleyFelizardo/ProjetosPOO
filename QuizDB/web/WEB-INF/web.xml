@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>PermissionsFilter</filter-name>
+        <filter-class>br.com.fatecpg.servlet.PermissionsFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PermissionsFilter</filter-name>
+        <url-pattern></url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>ControladorQuizServlet</servlet-name>
+        <servlet-class>br.com.fatecpg.servlet.ControladorQuizServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControladorQuizServlet</servlet-name>
+        <url-pattern>/ControladorQuizServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            5
+        </session-timeout>
+    </session-config>
+    <error-page>  
+    <exception-type>javax.faces.application.ViewExpiredException</exception-type>  
+    <location>/index.jsp</location>  
+    </error-page>  
+</web-app>

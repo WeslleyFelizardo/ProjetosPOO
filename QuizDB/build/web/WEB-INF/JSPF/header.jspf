@@ -1,0 +1,51 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@page import="br.com.fatecpg.modelo.Player"%>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.jsp">Quiz</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="ControladorQuizServlet?action=ranking" >Ranking</a>
+                </li>
+                <% if (request.getSession().getAttribute("userCurrent") == null) { %>
+                <li>
+                    <a href="" class="page-scroll" data-toggle="modal" data-target="#exampleModal"
+                       >Autenticar-se</a>
+                </li>
+                <% } %>
+                <% if (request.getSession().getAttribute("userCurrent") != null) { %>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= ((Player)request.getSession().getAttribute("userCurrent")).getName() %> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                        <% if (((Player)request.getSession().getAttribute("userCurrent")).getIdRole() == 1) { %>
+                        <li><a href="ControladorQuestionServlet?action=getAll">Manutenção questions</a></li>
+                        <li><a href="ControladorPlayerAdminServlet?action=getAll">Manutenção users</a></li>
+                            <% } else { %>
+                        <li><a href="ControladorPlayerServlet?action=historic">Histórico</a></li>
+                            <% } %>
+                        <li><a href="ControladorPlayerServlet?action=logOut">LogOut</a></li>
+                        <!--li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li!-->
+                    </ul>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
